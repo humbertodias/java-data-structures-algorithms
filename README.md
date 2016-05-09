@@ -13,9 +13,10 @@ Data Structure Algoritms using Java
 1. Stack **[Array,Linked]**
 2. Queue **[Array,Linked]**
 3. LinkedList **[Singly,Doubly]**
-4. Graph **[Vertext,Matrix]**
-5. Dijkstra
-6. AStar
+4. Tree **[BinarySearch]**
+5. Graph **[Vertext,Matrix]**
+6. Dijkstra
+7. AStar
 
 ## How to Play
 
