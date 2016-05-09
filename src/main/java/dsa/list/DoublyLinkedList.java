@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  * http://java2novice.com/data-structures-in-java/linked-list/doubly-linked-list/
  * @param <E> 
  */
-public class DoublyLinkedList<E> {
+public class DoublyLinkedList<E> implements LinkedList<E>{
  
     private Node head;
     private Node tail;
@@ -36,24 +36,33 @@ public class DoublyLinkedList<E> {
      * returns the size of the linked list
      * @return
      */
+    @Override
     public int size() { return size; }
      
     /**
      * return whether the list is empty or not
      * @return
      */
+    @Override
     public boolean isEmpty() { return size == 0; }
      
     /**
      * adds element at the starting of the linked list
      * @param element
+     * @return 
      */
-    public void addFirst(E element) {
+    public DoublyLinkedList<E> addFirst(E element) {
         Node tmp = new Node(element, head, null);
         if(head != null ) {head.prev = tmp;}
         head = tmp;
         if(tail == null) { tail = tmp;}
         size++;
+        return this;
+    }
+    
+    @Override
+    public DoublyLinkedList<E> add(E element){
+        return addFirst(element);
     }
      
     /**
@@ -91,6 +100,11 @@ public class DoublyLinkedList<E> {
             System.out.println(tmp.element);
             tmp = tmp.prev;
         }
+    }
+    
+    @Override
+    public E remove(){
+        return this.removeFirst();
     }
      
     /**

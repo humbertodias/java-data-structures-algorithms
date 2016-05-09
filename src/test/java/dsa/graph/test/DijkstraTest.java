@@ -50,11 +50,6 @@ public class DijkstraTest {
 
         assertNotNull(path);
         assertTrue(path.size() > 0);
-
-//        for (Vertex vertex : path) {
-//            System.out.println(vertex);
-//        }
-
     }
 
     private void addLane(String laneId, int sourceLocNo, int destLocNo,

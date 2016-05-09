@@ -4,12 +4,19 @@ package dsa.list;
  * http://java2novice.com/data-structures-in-java/linked-list/singly-linked-list/
  * @param <T> 
  */
-public class SinglyLinkedList<T> {
+public class SinglyLinkedList<T> implements LinkedList<T> {
 
     private Node<T> head;
     private Node<T> tail;
     private int total = 0;
-    public void add(T element) {
+    
+    /**
+     *
+     * @param element
+     * @return
+     */
+    @Override
+    public SinglyLinkedList<T> add(T element) {
 
         Node<T> nd = new Node<>();
         nd.setValue(element);
@@ -29,26 +36,39 @@ public class SinglyLinkedList<T> {
             tail = nd;
         }
         total++;
+        
+        return this;
+    }
+    
+    public T remove(){
+        return deleteFront();
     }
 
-    public void deleteFront() {
+    public T deleteFront() {
 
         if (head == null) {
             throw new RuntimeException("Underflow...");
         }
         Node<T> tmp = head;
+
         head = tmp.getNextRef();
         if (head == null) {
             tail = null;
         }
         
         total--;
-
+        
+        return tmp.getValue();
     }
 
-    
+    @Override
     public int size(){
         return total;
+    }
+    
+    @Override
+    public boolean isEmpty(){
+        return total == 0;
     }
     
     private class Node<T> implements Comparable<T> {
@@ -80,5 +100,6 @@ public class SinglyLinkedList<T> {
                 return 1;
             }
         }
+
     }
 }
