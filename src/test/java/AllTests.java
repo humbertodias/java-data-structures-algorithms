@@ -7,8 +7,9 @@ import dsa.list.test.DoublyLinkedListTest;
 import dsa.list.test.SinglyLinkedListTest;
 import dsa.queue.test.QueueArrayTest;
 import dsa.stack.test.StackArrayTest;
+import dsa.tree.test.BSTTreeTest;
 import org.junit.runners.Suite.SuiteClasses;
 
-@SuiteClasses({BFSTest.class, DFSTest.class, DijkstraTest.class, DoublyLinkedListTest.class, SinglyLinkedListTest.class, QueueArrayTest.class, StackArrayTest.class, AStarTest.class})
+@SuiteClasses({BFSTest.class, DFSTest.class, DijkstraTest.class, DoublyLinkedListTest.class, SinglyLinkedListTest.class, QueueArrayTest.class, StackArrayTest.class, AStarTest.class, BSTTreeTest.class})
 public class AllTests {
 }
