@@ -1,6 +1,6 @@
 package dsa.queue.test;
 
-import dsa.queue.QueueArray;
+import dsa.queue.priority.MaxPQ;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -8,9 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class QueueArrayTest {
+public class MaxPQTest {
 
-    QueueArray queue = new QueueArray();
+    MaxPQ queue = new MaxPQ();
 
     @BeforeClass
     public static void setUpClass() {
@@ -24,10 +24,10 @@ public class QueueArrayTest {
     @Before
     public void setUp() {
 
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        queue.enqueue(4);
+        queue.insert(1);
+        queue.insert(2);
+        queue.insert(3);
+        queue.insert(4);
 
     }
 
@@ -41,15 +41,15 @@ public class QueueArrayTest {
     }
 
     @Test
-    public void enqueue() {
-        queue.enqueue(5);
+    public void insert() {
+        queue.insert(5);
         assertEquals(queue.size(), 5);
     }
 
     @Test
     public void dequeue() {
-        Object last = queue.dequeue();
-        assertEquals(last, 1);
+        Object last = queue.delMax();
+        assertEquals(last, 4);
     }
 
 }
