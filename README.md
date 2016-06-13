@@ -51,9 +51,11 @@ Data Structure Algoritms using Java
 	![Preview](doc/huffman.png)
 
 
-5. Graph **[Vertex,Matrix]**
+5. Graph
 
-	![Preview](doc/graph.jpg)
+	* Vertex or Adjacent Matrix
+	
+	![Preview](doc/graph_adjacent_matrix.png)
 
 6. Dijkstra
 
