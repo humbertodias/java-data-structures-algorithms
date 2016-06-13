@@ -22,9 +22,11 @@ Data Structure Algoritms using Java
 3. LinkedList
 	
 	**Singly**	 
+	
 	![Preview](doc/linked_list.jpg)
 
 	**Doubly**
+	
 	![Preview](doc/doubly_linked_list.jpg)
 
 4. Tree **[BinarySearch,MinPQ,MaxPQ,Huffman]**
