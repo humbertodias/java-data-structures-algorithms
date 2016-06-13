@@ -15,9 +15,16 @@ Data Structure Algoritms using Java
 
 	![Preview](doc/stack.jpg)
 
-2. Queue **[Array,Linked]**
+2. Queue
+
+	* Array or Linked
 
 	![Preview](doc/queue.jpg)
+	
+	* Minimum/Maximum Priority Queue
+
+	![Preview](doc/priorityqueue.png)
+
 
 3. LinkedList
 	
@@ -33,9 +40,16 @@ Data Structure Algoritms using Java
 
 	![Preview](doc/singly_circular_linked_list.jpg)
 
-4. Tree **[BinarySearch,MinPQ,MaxPQ,Huffman]**
+4. Tree
+
+	* BinaryTree
 
 	![Preview](doc/binary_tree.jpg)
+
+	* Huffman
+
+	![Preview](doc/huffman.png)
+
 
 5. Graph **[Vertex,Matrix]**
 
