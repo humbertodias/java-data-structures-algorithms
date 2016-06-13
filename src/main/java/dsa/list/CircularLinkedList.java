@@ -1,13 +1,19 @@
 package dsa.list;
 
+/**
+ * 
+ */
 public class CircularLinkedList {
 
-    public int size = 0;
-    public Node head = null;
-    public Node tail = null;
+    private int size = 0;
+    private Node head = null;
+    private Node tail = null;
 
-    //add a new node at the start of the linked list
-    public void addNodeAtStart(int data) {
+    /** 
+     * add a new node at the start of the linked list
+     * @param data
+     **/
+    public void addNodeAtStart(Object data) {
         System.out.println("Adding node " + data + " at start");
         Node n = new Node(data);
         if (size == 0) {
@@ -23,7 +29,7 @@ public class CircularLinkedList {
         size++;
     }
 
-    public void addNodeAtEnd(int data) {
+    public void addNodeAtEnd(Object data) {
         if (size == 0) {
             addNodeAtStart(data);
         } else {
@@ -38,7 +44,7 @@ public class CircularLinkedList {
 
     public void deleteNodeFromStart() {
         if (size == 0) {
-            System.out.println("\nList is Empty");
+            throw new RuntimeException("List is Empty");
         } else {
             System.out.println("\ndeleting node " + head.data + " from start");
             head = head.next;
@@ -47,7 +53,7 @@ public class CircularLinkedList {
         }
     }
 
-    public int elementAt(int index) {
+    public Object elementAt(int index) {
         if (index > size) {
             return -1;
         }
@@ -59,7 +65,9 @@ public class CircularLinkedList {
         return n.data;
     }
 
-    //print the linked list
+    /**
+     * print the linked list
+     **/
     public void print() {
         System.out.print("Circular Linked List:");
         Node temp = head;
@@ -74,8 +82,11 @@ public class CircularLinkedList {
         System.out.println();
     }
 
-    //get Size
-    public int getSize() {
+    /**
+     * get Size
+     * @return
+     */
+    public int size() {
         return size;
     }
 
@@ -89,18 +100,17 @@ public class CircularLinkedList {
         c.print();
         c.addNodeAtEnd(4);
         c.print();
-        System.out.println("Size of linked list: " + c.getSize());
+        System.out.println("Size of linked list: " + c.size());
         System.out.println("Element at 2nd position: " + c.elementAt(2));
     }
 
-}
+    private class Node {
+        Object data;
+        Node next;
 
-class Node {
-
-    int data;
-    Node next;
-
-    public Node(int data) {
-        this.data = data;
+        public Node(Object data) {
+            this.data = data;
+        }
     }
+
 }

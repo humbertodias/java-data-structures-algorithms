@@ -1,22 +1,19 @@
 package dsa.list.test;
 
-import dsa.list.DoublyLinkedList;
+import dsa.list.CircularLinkedList;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-/**
- *
- */
-public class DoublyLinkedListTest {
+public class CircularLinkedListTest {
 
-    DoublyLinkedList list = new DoublyLinkedList();
+    CircularLinkedList list = new CircularLinkedList();
     int MAX = 10;
 
-    public DoublyLinkedListTest() {
+    public CircularLinkedListTest() {
     }
 
     @BeforeClass
@@ -31,7 +28,7 @@ public class DoublyLinkedListTest {
     public void setUp() {
 
         for (int i = 0; i < MAX; i++) {
-            list.addFirst(Math.random());
+            list.addNodeAtEnd(Math.random());
         }
 
     }
@@ -44,9 +41,9 @@ public class DoublyLinkedListTest {
     public void size() {
         assertEquals(list.size(), MAX);
     }
-    
-    public void remove(){
-        list.removeFirst();
-        assertEquals(list.size(), MAX-1);
+
+    public void remove() {
+        list.deleteNodeFromStart();
+        assertEquals(list.size(), MAX - 1);
     }
 }
