@@ -28,6 +28,10 @@ Data Structure Algoritms using Java
 	* Doubly
 	
 	![Preview](doc/doubly_linked_list.jpg)
+	
+	* Circular
+
+	![Preview](doc/singly_circular_linked_list.jpg)
 
 4. Tree **[BinarySearch,MinPQ,MaxPQ,Huffman]**
 
