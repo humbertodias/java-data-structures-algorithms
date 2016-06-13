@@ -134,3 +134,7 @@ Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
 2. [Dijkstra](http://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html)
 
 3. [Huffman](https://rosettacode.org/wiki/Huffman_coding#Java)
+
+4. [List](http://java2novice.com/data-structures-in-java/linked-list/doubly-linked-list/)
+
+5. [Stack](http://eddmann.com/posts/implementing-a-stack-in-java-using-arrays-and-linked-lists/)

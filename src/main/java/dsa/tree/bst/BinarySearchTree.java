@@ -3,12 +3,16 @@ package dsa.tree.bst;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Class BST */
+/**
+ * Class BST 
+ **/
 public class BinarySearchTree {
 
     private BSTNode root;
 
-    /* Constructor */
+    /**
+     * Constructor 
+     **/
     public BinarySearchTree() {
         root = null;
     }
