@@ -9,14 +9,39 @@ Data Structure Algoritms using Java
 2. Maven 3+
 3. Java 8+
 
-## Algorithms implemented
+## Algorithms
+
 1. Stack **[Array,Linked]**
+
+	![Preview](doc/stack.jpg)
+
 2. Queue **[Array,Linked]**
-3. LinkedList **[Singly,Doubly]**
+
+	![Preview](doc/queue.jpg)
+
+3. LinkedList
+	
+	**Singly**	 
+	![Preview](doc/linked_list.jpg)
+
+	**Doubly**
+	![Preview](doc/doubly_linked_list.jpg)
+
 4. Tree **[BinarySearch,MinPQ,MaxPQ,Huffman]**
-5. Graph **[Vertext,Matrix]**
+
+	![Preview](doc/binary_tree.jpg)
+
+5. Graph **[Vertex,Matrix]**
+
+	![Preview](doc/graph.jpg)
+
 6. Dijkstra
+
+	![Preview](doc/dijkstra.gif)
+
 7. AStar
+
+	![Preview](doc/a-star.gif)
 
 ## How to Play
 
@@ -82,5 +107,8 @@ Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
 
 ## References
 
-[A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
+1. [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
+2. [Dijkstra](http://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html)
+
+3. [Huffman](https://rosettacode.org/wiki/Huffman_coding#Java)
