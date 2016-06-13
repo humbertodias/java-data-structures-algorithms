@@ -57,11 +57,11 @@ Data Structure Algoritms using Java
 	
 	![Preview](doc/graph_adjacent_matrix.png)
 
-6. Dijkstra
+	* Dijkstra
 
 	![Preview](doc/dijkstra.gif)
 
-7. AStar
+	* AStar
 
 	![Preview](doc/a-star.gif)
 
