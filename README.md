@@ -11,32 +11,17 @@ Data Structure Algoritms using Java
 
 ## Sorting
 
-1. [Bubble](src/main/java/dsa/sort/BubleSort.java)
+* [Bubble](src/main/java/dsa/sort/BubleSort.java), [Insertion](src/main/java/dsa/sort/InsertionSort.java), [Selection](src/main/java/dsa/sort/SelectionSort.java), [Merge](src/main/java/dsa/sort/MergeSort.java)
 
 	![Preview](doc/bubble_sort.gif)
-
-2. [Insertion](src/main/java/dsa/sort/InsertionSort.java)
-
 	![Preview](doc/insertion_sort.gif)
-
-3. [Selection](src/main/java/dsa/sort/SelectionSort.java)
-
 	![Preview](doc/selection_sort.gif)
-
-4. [Merge](src/main/java/dsa/sort/MergeSort.java)
-
 	![Preview](doc/merge_sort.gif)
 
-5. [Merge](src/main/java/dsa/sort/ShellSort.java)
+* [Shell](src/main/java/dsa/sort/ShellSort.java), [Heap](src/main/java/dsa/sort/HeapSort.java), [Quick](src/main/java/dsa/sort/QuickSort.java)
 
 	![Preview](doc/shell_sort.gif)
-
-6. [Heap](src/main/java/dsa/sort/HeapSort.java)
-
 	![Preview](doc/heap_sort.gif)
-
-6. [Quick](src/main/java/dsa/sort/QuickSort.java)
-
 	![Preview](doc/quick_sort.gif)
 
 
