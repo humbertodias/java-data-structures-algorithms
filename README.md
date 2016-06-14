@@ -11,83 +11,66 @@ Data Structure Algoritms using Java
 
 ## Algorithms
 
-1. Stack **[Array,Linked]**
+1. Stack
 
 	![Preview](doc/stack.jpg)
 
-	[StackArray](src/main/java/dsa/stack/StackArray.java)
+	[StackArray](src/main/java/dsa/stack/StackArray.java),
 	[StackLinked](src/main/java/dsa/stack/StackLinked.java)
 
 2. Queue
 
-	* Array or Linked
+	* [Array](src/main/java/dsa/queue/QueueArray.java) or [Linked](src/main/java/dsa/queue/QueueLinked.java)
 
 	![Preview](doc/queue.jpg)
 	
-	[QueueArray](src/main/java/dsa/queue/QueueArray.java)
-	[QueueLinked](src/main/java/dsa/queue/QueueLinked.java)
-	
-	* Minimum/Maximum Priority Queue
+	* [Minimum](src/main/java/dsa/queue/priority/MinPQ.java) / [Maximum](src/main/java/dsa/queue/priority/MaxPQ.java) Priority Queue
 
 	![Preview](doc/priorityqueue.png)
 
-	[MinPQ](src/main/java/dsa/queue/priority/MinPQ.java)
-	[MaxPQ](src/main/java/dsa/queue/priority/MaxPQ.java)
-
 3. LinkedList
 	
-	* Singly	 
+	* [Singly](src/main/java/dsa/list/SinglyLinkedList.java)	 
 	
 	![Preview](doc/linked_list.jpg)
 
-	[SinglyLinkedList](src/main/java/dsa/list/SinglyLinkedList.java)
-
-	* Doubly
+	* [Doubly](src/main/java/dsa/list/DoublyLinkedList.java)
 	
 	![Preview](doc/doubly_linked_list.jpg)
-
-	[DoublyLinkedList](src/main/java/dsa/list/DoublyLinkedList.java)
-	
-	* Circular
+		
+	* [Circular](src/main/java/dsa/list/CircularLinkedList.java)
 
 	![Preview](doc/singly_circular_linked_list.jpg)
-
-	[CircularLinkedList](src/main/java/dsa/list/CircularLinkedList.java)
+	
 
 4. Tree
 
-	* BinaryTree
+	* [BinaryTree](src/main/java/dsa/tree/bst/BinarySearchTree.java)
+
 
 	![Preview](doc/binary_tree.jpg)
 
-	[BinarySearchTree](src/main/java/dsa/tree/bst/BinarySearchTree.java)
-
-	* Huffman
+	
+	* [HuffmanTree](src/main/java/dsa/tree/huffman/HuffmanTree.java)
 
 	![Preview](doc/huffman.png)
-
-	[HuffmanTree](src/main/java/dsa/tree/huffman/HuffmanTree.java)
+	
 
 5. Graph
 
-	* Vertex or Adjacent Matrix
+	* [Vertex](src/main/java/dsa/graph/Graph.java) or [Adjacent Matrix](src/main/java/dsa/graph/GraphMatrix.java)
 	
 	![Preview](doc/graph_adjacent_matrix.png)
 
-	[Graph](src/main/java/dsa/graph/Graph.java)
-	[GraphMatrix](src/main/java/dsa/graph/GraphMatrix.java)
-
-	* Dijkstra
+	
+	* [Dijkstra](src/main/java/dsa/graph/path/Dijkstra.java)
 
 	![Preview](doc/dijkstra.gif)
 
-	[Dijkstra](src/main/java/dsa/graph/path/Dijkstra.java)
-
-	* AStar
+	* [AStar](src/main/java/dsa/graph/path/AStar.java)
 
 	![Preview](doc/a-star.gif)
 
-	[AStar](src/main/java/dsa/graph/path/AStar.java)
 
 ## How to Play
 
