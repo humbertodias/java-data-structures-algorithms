@@ -20,10 +20,15 @@ Data Structure Algorithms using Java
 
 * [Shell](src/main/java/dsa/sort/ShellSort.java), [Heap](src/main/java/dsa/sort/HeapSort.java), [Quick](src/main/java/dsa/sort/QuickSort.java), [Radix](src/main/java/dsa/sort/RadixSort.java)
 
-
 	![Preview](doc/shell_sort.gif)
 	![Preview](doc/heap_sort.gif)
 	![Preview](doc/quick_sort.gif)
+
+## Searching
+
+* [Sequential](src/main/java/dsa/search/SequentialSearch.java), [Binary](src/main/java/dsa/search/BinarySearch.java)
+
+	![Preview](doc/binary-and-linear-search.gif)
 
 
 ## Data Structure
