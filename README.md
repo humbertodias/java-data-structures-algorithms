@@ -15,16 +15,24 @@ Data Structure Algoritms using Java
 
 	![Preview](doc/stack.jpg)
 
+	[StackArray](src/main/java/dsa/stack/StackArray.java)
+	[StackLinked](src/main/java/dsa/stack/StackLinked.java)
+
 2. Queue
 
 	* Array or Linked
 
 	![Preview](doc/queue.jpg)
 	
+	[QueueArray](src/main/java/dsa/queue/QueueArray.java)
+	[QueueLinked](src/main/java/dsa/queue/QueueLinked.java)
+	
 	* Minimum/Maximum Priority Queue
 
 	![Preview](doc/priorityqueue.png)
 
+	[MinPQ](src/main/java/dsa/queue/priority/MinPQ.java)
+	[MaxPQ](src/main/java/dsa/queue/priority/MaxPQ.java)
 
 3. LinkedList
 	
@@ -32,13 +40,19 @@ Data Structure Algoritms using Java
 	
 	![Preview](doc/linked_list.jpg)
 
+	[SinglyLinkedList](src/main/java/dsa/list/SinglyLinkedList.java)
+
 	* Doubly
 	
 	![Preview](doc/doubly_linked_list.jpg)
+
+	[DoublyLinkedList](src/main/java/dsa/list/DoublyLinkedList.java)
 	
 	* Circular
 
 	![Preview](doc/singly_circular_linked_list.jpg)
+
+	[CircularLinkedList](src/main/java/dsa/list/CircularLinkedList.java)
 
 4. Tree
 
@@ -46,10 +60,13 @@ Data Structure Algoritms using Java
 
 	![Preview](doc/binary_tree.jpg)
 
+	[BinarySearchTree](src/main/java/dsa/tree/bst/BinarySearchTree.java)
+
 	* Huffman
 
 	![Preview](doc/huffman.png)
 
+	[HuffmanTree](src/main/java/dsa/tree/huffman/HuffmanTree.java)
 
 5. Graph
 
@@ -57,13 +74,20 @@ Data Structure Algoritms using Java
 	
 	![Preview](doc/graph_adjacent_matrix.png)
 
+	[Graph](src/main/java/dsa/graph/Graph.java)
+	[GraphMatrix](src/main/java/dsa/graph/GraphMatrix.java)
+
 	* Dijkstra
 
 	![Preview](doc/dijkstra.gif)
 
+	[Dijkstra](src/main/java/dsa/graph/path/Dijkstra.java)
+
 	* AStar
 
 	![Preview](doc/a-star.gif)
+
+	[AStar](src/main/java/dsa/graph/path/AStar.java)
 
 ## How to Play
 
