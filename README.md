@@ -26,10 +26,9 @@ Data Structure Algorithms using Java
 
 ## Searching
 
-* [Sequential](src/main/java/dsa/search/SequentialSearch.java), [Binary](src/main/java/dsa/search/BinarySearch.java)
+* [Binary](src/main/java/dsa/search/BinarySearch.java), [Sequential](src/main/java/dsa/search/SequentialSearch.java)
 
 	![Preview](doc/binary-and-linear-search.gif)
-
 
 ## Data Structure
 
