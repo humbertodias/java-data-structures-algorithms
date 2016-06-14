@@ -89,10 +89,13 @@ Data Structure Algoritms using Java
 	
 	![Preview](doc/graph_adjacent_matrix.png)
 
-	
 	* [Dijkstra](src/main/java/dsa/graph/path/Dijkstra.java)
 
 	![Preview](doc/dijkstra.gif)
+
+	* [BellmanFord](src/main/java/dsa/graph/path/BellmanFord.java)
+
+	![Preview](doc/bellman_ford.gif)
 
 	* [AStar](src/main/java/dsa/graph/path/AStar.java)
 
@@ -167,8 +170,14 @@ Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
 
 2. [Dijkstra](http://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html)
 
-3. [Huffman](https://rosettacode.org/wiki/Huffman_coding#Java)
+3. [BellmanFord](http://www.geekviewpoint.com/java/graph/bellman_ford_shortest_path)
 
-4. [List](http://java2novice.com/data-structures-in-java/linked-list/doubly-linked-list/)
+4. [Huffman](https://rosettacode.org/wiki/Huffman_coding#Java)
 
-5. [Stack](http://eddmann.com/posts/implementing-a-stack-in-java-using-arrays-and-linked-lists/)
+5. [List](http://java2novice.com/data-structures-in-java/linked-list/doubly-linked-list/)
+
+6. [Stack](http://eddmann.com/posts/implementing-a-stack-in-java-using-arrays-and-linked-lists/)
+
+7. [Sorting](http://www.sorting-algorithms.com/)
+
+8. [Sorting Steps](https://www.bluffton.edu/~nesterd/java/SortingDemo.html)
