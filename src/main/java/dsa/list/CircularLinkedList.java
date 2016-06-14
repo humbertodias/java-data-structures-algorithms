@@ -1,7 +1,7 @@
 package dsa.list;
 
 /**
- * 
+ *
  */
 public class CircularLinkedList {
 
@@ -9,12 +9,13 @@ public class CircularLinkedList {
     private Node head = null;
     private Node tail = null;
 
-    /** 
+    /**
      * add a new node at the start of the linked list
+     *
      * @param data
-     **/
+     *
+     */
     public void addNodeAtStart(Object data) {
-        System.out.println("Adding node " + data + " at start");
         Node n = new Node(data);
         if (size == 0) {
             head = n;
@@ -39,14 +40,12 @@ public class CircularLinkedList {
             tail.next = head;
             size++;
         }
-        System.out.println("\nNode " + data + " is added at the end of the list");
     }
 
     public void deleteNodeFromStart() {
         if (size == 0) {
             throw new RuntimeException("List is Empty");
         } else {
-            System.out.println("\ndeleting node " + head.data + " from start");
             head = head.next;
             tail.next = head;
             size--;
@@ -67,7 +66,7 @@ public class CircularLinkedList {
 
     /**
      * print the linked list
-     **/
+     */
     public void print() {
         System.out.print("Circular Linked List:");
         Node temp = head;
@@ -84,27 +83,15 @@ public class CircularLinkedList {
 
     /**
      * get Size
+     *
      * @return
      */
     public int size() {
         return size;
     }
 
-    public static void main(String[] args) {
-        CircularLinkedList c = new CircularLinkedList();
-        c.addNodeAtStart(3);
-        c.addNodeAtStart(2);
-        c.addNodeAtStart(1);
-        c.print();
-        c.deleteNodeFromStart();
-        c.print();
-        c.addNodeAtEnd(4);
-        c.print();
-        System.out.println("Size of linked list: " + c.size());
-        System.out.println("Element at 2nd position: " + c.elementAt(2));
-    }
-
     private class Node {
+
         Object data;
         Node next;
 

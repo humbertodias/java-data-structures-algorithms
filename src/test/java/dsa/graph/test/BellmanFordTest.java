@@ -11,7 +11,6 @@ public class BellmanFordTest {
 
     @Test
     public void testBellmanFordWithPositiveEdges() throws Exception {
-        System.out.println("singleSourceShortestPath");
         Integer[][] weight = {
             {null, 10, null, null, 3},
             {null, null, 2, null, 1},
@@ -28,7 +27,6 @@ public class BellmanFordTest {
 
     @Test
     public void testBellmanFordWithNegativeEdges() throws Exception {
-        System.out.println("singleSourceShortestPath");
         Integer[][] weight = {
             {null, -1, 4, null, null},
             {null, null, 3, 2, 2},
@@ -45,7 +43,6 @@ public class BellmanFordTest {
 
     @Test
     public void testBellmanFordWithNegativeCycle() {
-        System.out.println("singleSourceShortestPath");
         Integer[][] weight = {
             {null, -1, 4, null, null},
             {null, null, 3, 2, 2},
