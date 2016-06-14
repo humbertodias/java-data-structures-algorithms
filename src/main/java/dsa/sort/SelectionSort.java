@@ -1,20 +1,22 @@
 package dsa.sort;
 
-public class SelectionSort{
+public class SelectionSort {
 
-    public void sort(Integer[] num) {
-        int i, j, first, temp;
-        for (i = num.length - 1; i > 0; i--) {
-            first = 0;   //initialize to subscript of first element
-            for (j = 1; j <= i; j++) //locate smallest element between positions 1 and i.
-            {
-                if (num[j] < num[first]) {
-                    first = j;
+    public void sort(Integer[] arr) {
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            int index = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[index]) {
+                    index = j;
                 }
             }
-            temp = num[first];   //swap smallest found with element in position i.
-            num[first] = num[i];
-            num[i] = temp;
+
+            int smallerNumber = arr[index];
+            arr[index] = arr[i];
+            arr[i] = smallerNumber;
         }
+
     }
+
 }

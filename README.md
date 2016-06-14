@@ -1,6 +1,6 @@
 # Java Data Structure Algorithms
 
-Data Structure Algoritms using Java
+Data Structure Algorithms using Java
 
 
 ## Prerequires
