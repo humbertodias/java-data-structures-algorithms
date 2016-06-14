@@ -27,7 +27,11 @@ Data Structure Algoritms using Java
 
 	![Preview](doc/merge_sort.gif)
 
-5. [Heap](src/main/java/dsa/sort/HeapSort.java)
+5. [Merge](src/main/java/dsa/sort/ShellSort.java)
+
+	![Preview](doc/shell_sort.gif)
+
+6. [Heap](src/main/java/dsa/sort/HeapSort.java)
 
 	![Preview](doc/heap_sort.gif)
 
