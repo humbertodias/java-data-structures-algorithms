@@ -1,4 +1,4 @@
-package dsa.queue.test;
+package dsa.queue;
 
 import dsa.queue.priority.MaxPQ;
 import org.junit.After;

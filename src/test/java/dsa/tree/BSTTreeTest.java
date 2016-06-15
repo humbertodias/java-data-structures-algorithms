@@ -1,4 +1,4 @@
-package dsa.tree.test;
+package dsa.tree;
 
 import dsa.tree.bst.BinarySearchTree;
 import org.junit.After;

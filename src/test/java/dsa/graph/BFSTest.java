@@ -1,4 +1,4 @@
-package dsa.graph.test;
+package dsa.graph;
 
 import dsa.graph.GraphMatrix;
 import java.util.Arrays;
@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
  *
  * @author humbertodias
  */
-public class DFSTest {
-
-    private GraphMatrix graphMatrix;
+public class BFSTest {
     
-    public DFSTest() {
+    GraphMatrix graphMatrix;
+    
+    public BFSTest() {
     }
     
     @BeforeClass
@@ -51,9 +51,11 @@ public class DFSTest {
     }
 
      @Test
-     public void dfs() {
-         Integer[] walk = {0, 1, 7, 2, 3, 4, 8, 5, 6};
-         List<Integer> dfs = Arrays.asList(walk);
-         assertEquals(dfs, graphMatrix.dfs() );
+     public void bfs() {
+         Integer[] walk = {0, 1, 3, 8, 7, 2, 4, 5, 6};
+         List<Integer> bfs = Arrays.asList(walk);
+         assertEquals(bfs, graphMatrix.bfs() );
      }
+     
+     
 }

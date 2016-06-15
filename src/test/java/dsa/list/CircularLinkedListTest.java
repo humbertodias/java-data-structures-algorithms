@@ -1,4 +1,4 @@
-package dsa.list.test;
+package dsa.list;
 
 import dsa.list.CircularLinkedList;
 import org.junit.After;

@@ -261,4 +261,32 @@ public class BitStream {
         return retval;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 37 * hash + Arrays.hashCode(this.bank);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final BitStream other = (BitStream) obj;
+        if (!Arrays.equals(this.bank, other.bank)) {
+            return false;
+        }
+        return true;
+    }
+
+
+    
+    
 }

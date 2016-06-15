@@ -1,6 +1,6 @@
-package dsa.queue.test;
+package dsa.queue;
 
-import dsa.queue.priority.MinPQ;
+import dsa.queue.QueueArray;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -8,9 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MinPQTest {
+public class QueueArrayTest {
 
-    MinPQ queue = new MinPQ();
+    QueueArray queue = new QueueArray();
 
     @BeforeClass
     public static void setUpClass() {
@@ -24,10 +24,10 @@ public class MinPQTest {
     @Before
     public void setUp() {
 
-        queue.insert(4);
-        queue.insert(3);
-        queue.insert(2);
-        queue.insert(1);
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.enqueue(4);
 
     }
 
@@ -41,14 +41,14 @@ public class MinPQTest {
     }
 
     @Test
-    public void insert() {
-        queue.insert(5);
+    public void enqueue() {
+        queue.enqueue(5);
         assertEquals(queue.size(), 5);
     }
 
     @Test
     public void dequeue() {
-        Object last = queue.delMin();
+        Object last = queue.dequeue();
         assertEquals(last, 1);
     }
 

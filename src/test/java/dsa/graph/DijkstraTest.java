@@ -1,4 +1,4 @@
-package dsa.graph.test;
+package dsa.graph;
 
 import dsa.graph.Edge;
 import dsa.graph.Graph;

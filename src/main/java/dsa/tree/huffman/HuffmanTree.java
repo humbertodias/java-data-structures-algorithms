@@ -3,10 +3,20 @@ package dsa.tree.huffman;
 /*
  * Huffman Tree class
  */
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.PriorityQueue;
+import java.util.stream.Stream;
 
 public class HuffmanTree {
+
     // the Tree of Trees
     private Tree htree;
 
@@ -22,8 +32,7 @@ public class HuffmanTree {
         }
         return freq;
     }
-    
-    
+
     /**
      * Create Huffman Tree for encoding and populates the code/length arrays
      * based on a 256 element array of frequency counts
@@ -55,12 +64,10 @@ public class HuffmanTree {
         return htree;
     }
 
-    
-    public BitStream getEncodedTree(){
+    public BitStream getEncodedTree() {
         return htree.encodedTree();
     }
-    
-    
+
     /**
      * Encode a string to a huffman-encoded BitStream
      *
@@ -100,9 +107,46 @@ public class HuffmanTree {
     public String decode(BitStream input) {
         StringBuilder output = new StringBuilder();
         while (!input.EOB()) {
-            output.append(  (char) htree.getCode(input) );
+            output.append((char) htree.getCode(input));
         }
         return output.toString();
+    }
+
+    /**
+     *
+     * @param input
+     * @param filePath
+     * @return 
+     * @throws IOException
+     */
+    public File saveToFile(BitStream input, String filePath) throws IOException {
+        File file = new File(filePath);
+        try (FileOutputStream fos = new FileOutputStream(filePath)) {
+            fos.write(input.getBank());
+        }
+        return file;
+    }
+
+    /**
+     *
+     * @param file
+     * @return
+     * @throws IOException
+     */
+    public BitStream readFromFile(File file) throws IOException {
+        byte[] array = Files.readAllBytes(file.toPath());
+        return new BitStream(array);
+    }
+    
+    
+    /**
+     *
+     * @param filePath
+     * @return
+     * @throws IOException
+     */
+    public BitStream readFromFile(String filePath) throws IOException {
+        return readFromFile( new File(filePath ) );
     }
 
     /**
@@ -195,7 +239,7 @@ public class HuffmanTree {
     /**
      * Show all non-zero codes
      *
-     * @return 
+     * @return
      */
     public String displayCodes() {
         StringBuilder out = new StringBuilder();

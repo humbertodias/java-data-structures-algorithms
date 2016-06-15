@@ -1,7 +1,9 @@
-package dsa.tree.test;
+package dsa.tree;
 
 import dsa.tree.huffman.BitStream;
 import dsa.tree.huffman.HuffmanTree;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,6 +19,7 @@ public class HuffmanTreeTest {
 
     int[] frequencies;
     HuffmanTree ht;
+    BitStream encoded;
 
     @Before
     public void setup() {
@@ -25,6 +28,8 @@ public class HuffmanTreeTest {
 
         // create huffman tree from frequencies
         ht = new HuffmanTree(frequencies);
+
+        encoded = ht.encode(testString);
 
     }
 
@@ -73,7 +78,7 @@ public class HuffmanTreeTest {
     }
 
     @Test
-    public void encodeDecode() {
+    public void encodeDecode() throws FileNotFoundException, IOException {
 
         // get BitStream of tree
         BitStream bs = ht.getEncodedTree();
@@ -86,7 +91,6 @@ public class HuffmanTreeTest {
 
         // encode string to bitstream
         BitStream os = ht.encode(testString);
-        //BitStream os = ht.encode(testString.getBytes());
 
         String oos = "\n8 94 fb e2 ae 3d f7 64 65 37 d 68 bf d2 fd 69 6e 7d ab e9 d3 47 4a 8f \n"
                 + "2c 59 76 f1 34 bf 73 fb bb 3b cb f2 f3 dd 5f 75 4a 62 d6 3d 3d 76 ac f5 \n"
@@ -147,6 +151,17 @@ public class HuffmanTreeTest {
         // decode back to string
         String output = dt.decode(os);
         Assert.assertEquals(testString, output);
+    }
+
+    @Test
+    public void decode() {
+        String decoded = ht.decode(encoded);
+        Assert.assertEquals(testString, decoded);
+    }
+
+    @Test
+    public void encode() {
+        Assert.assertEquals(encoded, ht.encode(testString));
     }
 
 }

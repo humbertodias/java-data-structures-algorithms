@@ -1,7 +1,5 @@
 package dsa.queue.priority;
 
-import static java.lang.System.out;
-
 import java.util.NoSuchElementException;
 
 /**
@@ -116,24 +114,4 @@ public class MaxPQ<Key extends Comparable<Key>> {
         return this.N;
     }
     
-    public static void main(String[] args) {
-        MaxPQ<String> queue = new MaxPQ<>();
-        queue.insert("P");
-        queue.insert("R");
-        queue.insert("I");
-        queue.insert("O");
-        queue.insert("R");
-        queue.insert("I");
-        queue.insert("T");
-        queue.insert("Y");
-        queue.insert("Q");
-        queue.insert("U");
-        queue.insert("E");
-        queue.insert("U");
-        queue.insert("E");
-
-        while (!queue.isEmpty()) {
-            out.printf("%s ", queue.delMax());
-        }
-    }
 }
