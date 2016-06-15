@@ -11,7 +11,7 @@ Data Structure Algorithms using Java
 
 ## Sorting
 
-* [Bubble](src/main/java/dsa/sort/BubleSort.java), [Insertion](src/main/java/dsa/sort/InsertionSort.java), [Selection](src/main/java/dsa/sort/SelectionSort.java), [Merge](src/main/java/dsa/sort/MergeSort.java)
+* [Bubble](src/main/java/dsa/sort/BubbleSort.java), [Insertion](src/main/java/dsa/sort/InsertionSort.java), [Selection](src/main/java/dsa/sort/SelectionSort.java), [Merge](src/main/java/dsa/sort/MergeSort.java)
 
 	![Preview](doc/bubble-sort.gif)
 	![Preview](doc/insertion-sort.gif)
@@ -37,11 +37,11 @@ Data Structure Algorithms using Java
 	![Preview](doc/stack.jpg)
 
 	[StackArray](src/main/java/dsa/stack/StackArray.java),
-	[StackLinked](src/main/java/dsa/stack/StackLinked.java)
+	[StackLinked](src/main/java/dsa/stack/StackLinkedList.java)
 
 2. Queue
 
-	* [Array](src/main/java/dsa/queue/QueueArray.java) or [Linked](src/main/java/dsa/queue/QueueLinked.java)
+	* [Array](src/main/java/dsa/queue/QueueArray.java) or [Linked](src/main/java/dsa/queue/QueueLinkedList.java)
 
 	![Preview](doc/queue.jpg)
 	
@@ -83,11 +83,11 @@ Data Structure Algorithms using Java
 	
 	![Preview](doc/graph_adjacent_matrix.png)
 
-	* [Dijkstra](src/main/java/dsa/graph/path/Dijkstra.java)
+	* [Dijkstra](src/main/java/dsa/ai/graph/path/Dijkstra.java)
 
 	![Preview](doc/dijkstra.gif)
 
-	* [BellmanFord](src/main/java/dsa/graph/path/BellmanFord.java)
+	* [BellmanFord](src/main/java/dsa/ai/graph/path/BellmanFord.java)
 
 	![Preview](doc/bellman_ford.gif)
 
@@ -95,7 +95,7 @@ Data Structure Algorithms using Java
 
 	![Preview](doc/mini-max.gif)
 
-	* [AStar](src/main/java/dsa/ai/graph/path/AStar.java)
+	* [AStar](src/main/java/dsa/ai/graph/path/astar/AStar.java)
 
 	![Preview](doc/a-star.gif)
 
