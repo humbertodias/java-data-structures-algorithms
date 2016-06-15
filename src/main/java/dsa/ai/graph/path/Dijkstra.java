@@ -1,4 +1,4 @@
-package dsa.graph.path;
+package dsa.ai.graph.path;
 
 import dsa.graph.Edge;
 import java.util.ArrayList;

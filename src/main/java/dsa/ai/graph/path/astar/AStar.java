@@ -1,4 +1,4 @@
-package dsa.graph.path.astar;
+package dsa.ai.graph.path.astar;
 
 import java.util.Comparator;
 import java.util.HashMap;

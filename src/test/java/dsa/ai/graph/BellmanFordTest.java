@@ -1,6 +1,6 @@
-package dsa.graph;
+package dsa.ai.graph;
 
-import dsa.graph.path.BellmanFord;
+import dsa.ai.graph.path.BellmanFord;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

@@ -1,7 +1,7 @@
-package dsa.graph.astar;
+package dsa.ai.graph.astar;
 
-import dsa.graph.path.astar.Grid2d;
-import dsa.graph.path.astar.Grid2d.MapNode;
+import dsa.ai.graph.path.astar.Grid2d;
+import dsa.ai.graph.path.astar.Grid2d.MapNode;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;

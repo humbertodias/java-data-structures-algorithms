@@ -1,8 +1,8 @@
 
-import dsa.graph.astar.AStarTest;
+import dsa.ai.graph.astar.AStarTest;
 import dsa.graph.BFSTest;
 import dsa.graph.DFSTest;
-import dsa.graph.DijkstraTest;
+import dsa.ai.graph.DijkstraTest;
 import dsa.list.DoublyLinkedListTest;
 import dsa.list.SinglyLinkedListTest;
 import dsa.queue.QueueArrayTest;

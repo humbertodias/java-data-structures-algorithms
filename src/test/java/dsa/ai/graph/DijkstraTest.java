@@ -1,9 +1,9 @@
-package dsa.graph;
+package dsa.ai.graph;
 
+import dsa.ai.graph.path.Dijkstra;
 import dsa.graph.Edge;
 import dsa.graph.Graph;
 import dsa.graph.Vertex;
-import dsa.graph.path.Dijkstra;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

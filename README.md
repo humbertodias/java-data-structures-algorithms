@@ -91,7 +91,11 @@ Data Structure Algorithms using Java
 
 	![Preview](doc/bellman_ford.gif)
 
-	* [AStar](src/main/java/dsa/graph/path/AStar.java)
+	* [Mini Max](src/main/java/dsa/ai/graph/minimax/Minimax.java)
+
+	![Preview](doc/mini-max.gif)
+
+	* [AStar](src/main/java/dsa/ai/graph/path/AStar.java)
 
 	![Preview](doc/a-star.gif)
 
@@ -177,3 +181,5 @@ Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
 8. [Sorting Steps](https://www.bluffton.edu/~nesterd/java/SortingDemo.html)
 
 9. [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)
+
+10. [Mini Max](http://www.brian-borowski.com/software/connectfour/)
