@@ -71,6 +71,11 @@ Data Structure Algorithms using Java
 
 	![Preview](doc/binary_tree.jpg)
 
+	* [AVLTree](src/main/java/dsa/tree/avl/AVLTree.java)
+
+
+	![Preview](doc/avl.gif)
+
 	
 	* [HuffmanTree](src/main/java/dsa/tree/huffman/HuffmanTree.java)
 
