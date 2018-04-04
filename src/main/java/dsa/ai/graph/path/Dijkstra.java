@@ -1,6 +1,7 @@
 package dsa.ai.graph.path;
 
 import dsa.graph.Edge;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -105,9 +106,9 @@ public class Dijkstra {
         }
     }
 
-    /*
-   * This method returns the path from the source to the selected target and
-   * NULL if no path exists
+    /**
+     * This method returns the path from the source to the selected target and
+     * NULL if no path exists
      */
     public LinkedList<Vertex> getPath(Vertex target) {
         LinkedList<Vertex> path = new LinkedList<>();

@@ -11,8 +11,6 @@ public class StackLinkedList<T> implements Stack<T> {
         private Node next;
     }
 
-    public StackLinkedList() { }
-
     public StackLinkedList<T> push(T ele)
     {
         Node current = first;

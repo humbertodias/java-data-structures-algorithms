@@ -5,9 +5,10 @@ import dsa.tree.huffman.HuffmanTree;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Arrays;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class HuffmanTreeTest {
 
@@ -35,13 +36,13 @@ public class HuffmanTreeTest {
 
     @Test
     public void textLength() {
-        Assert.assertEquals(445, testString.length());
+        assertEquals(445, testString.length());
     }
 
     @Test
     public void frequencyArray() {
         String sfrequencies = "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 3, 16, 18, 37, 3, 3, 1, 42, 0, 0, 21, 17, 24, 29, 11, 5, 22, 18, 32, 28, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]";
-        Assert.assertEquals(sfrequencies, Arrays.toString(frequencies));
+        assertEquals(sfrequencies, Arrays.toString(frequencies));
     }
 
     @Test
@@ -74,7 +75,7 @@ public class HuffmanTreeTest {
                 + "117 : 0111\n"
                 + "118 : 0000111\n"
                 + "120 : 0000101\n";
-        Assert.assertEquals(codes, ht.displayCodes());
+        assertEquals(codes, ht.displayCodes());
     }
 
     @Test
@@ -84,10 +85,10 @@ public class HuffmanTreeTest {
         BitStream bs = ht.getEncodedTree();
 
         String bbs = bs.toString();
-        Assert.assertEquals("\n2 5d 71 14 ca ad e0 b4 28 94 5b b5 b2 d2 5c 97 2 c5 66 59 e5 8b 75 d4 \n58 6d eb a2 c7 6d 48 b 9d 92 ca 1 ", bbs);
+        assertEquals("\n2 5d 71 14 ca ad e0 b4 28 94 5b b5 b2 d2 5c 97 2 c5 66 59 e5 8b 75 d4 \n58 6d eb a2 c7 6d 48 b 9d 92 ca 1 ", bbs);
 
         int treelen = bs.getBank().length;
-        Assert.assertEquals(36, treelen);
+        assertEquals(36, treelen);
 
         // encode string to bitstream
         BitStream os = ht.encode(testString);
@@ -102,17 +103,17 @@ public class HuffmanTreeTest {
                 + "95 8 62 9d 0 c1 b0 b6 f5 57 ba 6e 16 ad 36 b4 7d a2 b5 9d 47 b1 51 59 \n"
                 + "a5 b2 92 4f 7d a9 7e e3 b5 62 da ce 2a 8c b 9d 2b 56 9b 18 dd fe 7a 3b \n"
                 + "56 bc 88 9a d0 c6 f8 f7 7f 2b c 2c 94 7b 80 1 ";
-        Assert.assertEquals(oos, os.toString());
+        assertEquals(oos, os.toString());
 
         int datalen = os.getBank().length;
-        Assert.assertEquals(232, datalen);
+        assertEquals(232, datalen);
 
         int compressedLength = (datalen + treelen);
-        Assert.assertEquals(268, compressedLength);
+        assertEquals(268, compressedLength);
 
         int orig = testString.length();
         int compressedPercent = (int) (((float) (orig - treelen - datalen) / orig) * 100);
-        Assert.assertEquals(39, compressedPercent);
+        assertEquals(39, compressedPercent);
 
         // re-create huffman tree from encoded bitstream
         HuffmanTree dt = new HuffmanTree(bs);
@@ -146,22 +147,22 @@ public class HuffmanTreeTest {
                 + "118 : 0000111\n"
                 + "120 : 0000101\n";
 
-        Assert.assertEquals(codes, dt.displayCodes());
+        assertEquals(codes, dt.displayCodes());
 
         // decode back to string
         String output = dt.decode(os);
-        Assert.assertEquals(testString, output);
+        assertEquals(testString, output);
     }
 
     @Test
     public void decode() {
         String decoded = ht.decode(encoded);
-        Assert.assertEquals(testString, decoded);
+        assertEquals(testString, decoded);
     }
 
     @Test
     public void encode() {
-        Assert.assertEquals(encoded, ht.encode(testString));
+        assertEquals(encoded, ht.encode(testString));
     }
 
 }

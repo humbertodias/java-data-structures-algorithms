@@ -12,8 +12,6 @@ public class QueueLinkedList<T> implements Queue<T> {
         private Node next;
     }
 
-    public QueueLinkedList() { }
-
     @Override
     public QueueLinkedList<T> enqueue(T ele)
     {

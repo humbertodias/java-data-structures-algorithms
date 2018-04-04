@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
+
 
 public class MergeSortTest {
 
@@ -23,7 +25,7 @@ public class MergeSortTest {
         Arrays.sort(expected);
         Integer[] sorted = input.clone();
         sorter.sort(sorted);
-        Assert.assertArrayEquals(expected, sorted);
+        assertArrayEquals(expected, sorted);
     }
 
 

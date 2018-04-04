@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
+
 public class BubbleSortTest {
 
     BubbleSort sorter = new BubbleSort();
@@ -21,7 +23,7 @@ public class BubbleSortTest {
         Arrays.sort(expected);
         Integer[] sorted = input.clone();
         sorter.sort(sorted);
-        Assert.assertArrayEquals(expected, sorted);
+        assertArrayEquals(expected, sorted);
     }
 
 }

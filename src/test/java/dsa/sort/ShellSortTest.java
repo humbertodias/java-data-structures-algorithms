@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
+
 public class ShellSortTest {
 
     ShellSort sorter = new ShellSort();
@@ -20,7 +22,7 @@ public class ShellSortTest {
         Arrays.sort(expected);
         Integer[] sorted = input.clone();
         sorter.sort(sorted);
-        Assert.assertArrayEquals(expected, sorted);
+        assertArrayEquals(expected, sorted);
     }
 
 }
