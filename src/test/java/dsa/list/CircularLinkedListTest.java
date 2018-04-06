@@ -1,12 +1,8 @@
 package dsa.list;
 
-import dsa.list.CircularLinkedList;
-import org.junit.After;
-import org.junit.AfterClass;
+import org.junit.*;
+
 import static org.junit.Assert.assertEquals;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 public class CircularLinkedListTest {
 
@@ -42,6 +38,7 @@ public class CircularLinkedListTest {
         assertEquals(list.size(), MAX);
     }
 
+    @Test
     public void remove() {
         list.deleteNodeFromStart();
         assertEquals(list.size(), MAX - 1);

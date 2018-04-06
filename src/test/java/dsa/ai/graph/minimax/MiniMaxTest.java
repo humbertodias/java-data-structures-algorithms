@@ -5,6 +5,8 @@ import java.io.PrintStream;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class MiniMaxTest {
 
     @Test
@@ -60,20 +62,21 @@ public class MiniMaxTest {
                 + "|X|O|X|X|O| |O|\n"
                 + "---------------";
 
-//        Assert.assertEquals(board1.trim(), baos.toString().trim());
+        assertEquals(board1.trim(), baos.toString().trim());
 
         Minimax minimax = new Minimax(board, 8);
         char mark = Board.MARK_RED;
         int col = minimax.alphaBeta(mark);
 //        System.out.println("Place in column: " + col);
-        Assert.assertEquals(2, col);
+        assertEquals(2, col);
 
 //        System.out.println("Boards analyzed: " + minimax.getBoardsAnalyzed());
 
-        Assert.assertEquals(2494, minimax.getBoardsAnalyzed());
+        assertEquals(2494, minimax.getBoardsAnalyzed());
         board.set(col, mark);
         board.display(out);
 
+        /*
         String board2 = "| |X|X|O| | | |\n"
                 + "| |X|X|O| | |O|\n"
                 + "| |O|O|O|X| |X|\n"
@@ -82,7 +85,8 @@ public class MiniMaxTest {
                 + "|X|O|X|X|O| |O|\n"
                 + "---------------";
 
-//        Assert.assertEquals(board2.trim(), baos.toString().trim());
+        assertEquals(board2.trim(), baos.toString().trim());
+        */
     }
 
 }

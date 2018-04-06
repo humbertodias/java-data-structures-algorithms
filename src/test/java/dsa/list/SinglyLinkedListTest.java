@@ -1,12 +1,8 @@
 package dsa.list;
 
-import dsa.list.SinglyLinkedList;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  *
@@ -45,6 +41,7 @@ public class SinglyLinkedListTest {
         assertEquals(list.size(), MAX);
     }
 
+    @Test
     public void remove() {
         list.deleteFront();
         assertEquals(list.size(), MAX - 1);

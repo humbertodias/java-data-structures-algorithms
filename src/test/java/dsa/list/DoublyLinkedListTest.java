@@ -40,7 +40,8 @@ public class DoublyLinkedListTest {
     public void size() {
         assertEquals(list.size(), MAX);
     }
-    
+
+    @Test
     public void remove(){
         list.removeFirst();
         assertEquals(list.size(), MAX-1);
