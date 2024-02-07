@@ -1,7 +1,8 @@
+[![Build, Test](https://github.com/humbertodias/java-data-structures-algorithms/actions/workflows/build.yml/badge.svg)](https://github.com/humbertodias/java-data-structures-algorithms/actions/workflows/build.yml)
+
 # Java Data Structure Algorithms
 
 Data Structure Algorithms using Java
-
 
 ## Prerequires
 
