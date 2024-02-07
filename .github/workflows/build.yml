@@ -25,5 +25,5 @@ jobs:
           distribution: 'temurin'
           architecture: x64
 
-      - name: Setup xvfb for screen 0
+      - name: Build
         run: mvn package
