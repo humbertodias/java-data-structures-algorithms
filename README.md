@@ -4,7 +4,7 @@
 
 Data Structure Algorithms using Java
 
-## Prerequires
+## Prerequisites
 
 1. Git 2.6+
 2. Maven 3+
@@ -64,24 +64,19 @@ Data Structure Algorithms using Java
 
 	![Preview](doc/singly_circular_linked_list.jpg)
 	
-
 4. Tree
 
 	* [BinaryTree](src/main/java/dsa/tree/bst/BinarySearchTree.java)
-
 
 	![Preview](doc/binary_tree.jpg)
 
 	* [AVLTree](src/main/java/dsa/tree/avl/AVLTree.java)
 
-
 	![Preview](doc/avl.gif)
 
-	
 	* [HuffmanTree](src/main/java/dsa/tree/huffman/HuffmanTree.java)
 
 	![Preview](doc/huffman.png)
-	
 
 5. Graph
 
@@ -110,19 +105,19 @@ Data Structure Algorithms using Java
 
 Clone
 
-```
+```shell
 git clone https://github.com/humbertodias/java-data-structures-algorithms.git
 ```
 
 Inside the folder
 
-```
+```shell
 cd java-data-structures-algorithms
 ```
 
 Run
 
-```
+```shell
 mvn test
 ```
 ```
@@ -166,7 +161,6 @@ Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Final Memory: 9M/245M
 [INFO] ------------------------------------------------------------------------
 ```
-
 
 ## References
 
